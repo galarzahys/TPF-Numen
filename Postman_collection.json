@@ -1,0 +1,1213 @@
+{
+	"info": {
+		"_postman_id": "38990a84-b543-44a4-82e1-008a2423af75",
+		"name": "TPF-Numen-Back-Gonzalo Galarza",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21688073"
+	},
+	"item": [
+		{
+			"name": "Users Collections",
+			"item": [
+				{
+					"name": "Registrar usuario 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"usuario1@prueba.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Registrar usuario 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"usuario2@prueba.com\",\r\n    \"password\":\"abcdefg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Login usuario 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"usuario1@prueba.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Login usuario 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"usuario2@prueba.com\",\r\n    \"password\":\"abcdefg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Login con error de email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"prueba2@prueba.com\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Login con error de password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"usuario1@prueba.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar favoritos User1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/favorites/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"favorites",
+								"2"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Insertar favoritos User2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/favorites/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"favorites",
+								"1"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar favoritos User1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/favorites/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"favorites",
+								"2"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar favoritos User2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/favorites/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"favorites",
+								"1"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener todos los usuarios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener usuario por ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"2"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete user by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"1"
+							]
+						},
+						"description": "Elimina el usuario indicado por id en parámetro"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Anime",
+			"item": [
+				{
+					"name": "Obtener listado de todos los animes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/animes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animes",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener anime por Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/animes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animes",
+								"2"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar anime - ejemplo 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\":\"Dragon Ball\",\r\n    \"descripcion\":\"El protagonista es Goku, un ser de la raza sayayin con poderes de pelea extraordinarios\",\r\n    \"imagen\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.animeunited.com.br%2Fnoticias%2Fanimes%2Fdragon-ball-anime-classico-esta-disponivel-dublado-na-crunchyroll%2F&psig=AOvVaw31sQtjp1Un2ehZSx_4Z-m3&ust=1668663576202000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCDhrD-sfsCFQAAAAAdAAAAABAE\",\r\n    \"categoria\": \"Fantasia\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/animes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animes",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar anime - ejemplo 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\":\"Saint Seya\",\r\n    \"descripcion\":\"Cuenta la lucha entre el bien y el mal, que combaten sin descanso por imponerse el uno sobre el otro. Los santos (luz/bien) con la energía del cosmos e inspirados cada uno por una constelación de estrellas y un personaje de la antigua Grecia, dan su vida para proteger a la diosa Atenea, que sufre los ataques de las fuerzas del mal, lideradas por Hades y los santos negros. Ahora que la Tierra tiene problemas, han vuelto a aparecer, sin más armas que su valor para enfrentarse de nuevo al mal que azota al mundo.\",\r\n    \"imagen\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Finfinitas-guerras.fandom.com%2Fpt-br%2Fwiki%2FSaint_Seiya&psig=AOvVaw3G7M5YyNcG6YhC3ZzxRwAL&ust=1668664818309000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNjapYCDsvsCFQAAAAAdAAAAABAE\",\r\n    \"categoria\":\"Drama\" \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/animes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animes",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar anime - ejemplo 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\":\"Naruto\",\r\n    \"descripcion\":\"La historia cuenta como en un mundo de naciones y aldeas ninja, existen unas poderosas criaturas, los bijuu y la más grande de todas ellas es el Zorro de Nueve Colas. Así pues, cuando este atacó la Aldea Oculta de la Hoja, su líder dio su vida a cambio de proteger a la aldea, y no solo eso, sino que selló al monstruo en un niño recién nacido, al que pusieron de nombre Naruto. Así es como empieza la historia de Naruto, quien crece siendo odiado por todos, y pretende convertirse en el próximo líder de su aldea.\",\r\n    \"imagen\": \"https://www.lavanguardia.com/files/content_image_desktop_filter/uploads/2020/09/25/5fad3e4ce2c62.jpeg\",\r\n    \"categoria\":\"Aventura\" \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/animes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animes",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar anime - ejemplo 4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\":\"Slam Dunk\",\r\n    \"descripcion\":\"Slam Dunk narra la historia de la evolución como jugador de baloncesto, y como persona, de su protagonista Hanamichi Sakuragi, un joven de 15 años, problemático y pandillero con un impresionante registro de cincuenta rechazos amorosos a sus espaldas. Al inicio de la serie Hanamichi no sabe nada de lo que es el deporte o más que nada del baloncesto.\",\r\n    \"imagen\": \"https://www.crunchyroll.com/imgsrv/display/thumbnail/480x720/catalog/crunchyroll/baaac655eb8a9c262752b84f8f087ac9.jpeg\",\r\n    \"categoria\":\"Deporte\" \r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/animes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animes",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Editar animé",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\":\"Dragon Ball\",\r\n    \"descripcion\":\"El protagonista es Goku, un niño que vivía con su abuelo Son Gohan en las montañas, hasta que una fatídica noche de luna llena, este fallece. Goku entonces se encuentra con Bulma, una joven con una misión peculiar: encontrar las Bolas de Dragón, unas esferas mágicas capaces de convocar a Shen Long, un dragón divino que concede cualquier deseo que se pida. Así, Goku pasará todo el tiempo buscando las codiciadas esferas, además de entrenarse en artes marciales para convertirse en el ser más fuerte de todos los tiempos y protegiendo a los demás contra todo mal que existe.\",\r\n    \"imagen\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.animeunited.com.br%2Fnoticias%2Fanimes%2Fdragon-ball-anime-classico-esta-disponivel-dublado-na-crunchyroll%2F&psig=AOvVaw31sQtjp1Un2ehZSx_4Z-m3&ust=1668663576202000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCDhrD-sfsCFQAAAAAdAAAAABAE\",\r\n    \"categoria\": \"Fantasia\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/animes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animes",
+								"1"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar animé",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/animes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"animes",
+								"2"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chapters",
+			"item": [
+				{
+					"name": "Obtener listado de todos los capitulos de un anime",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/chapters/?animeId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								""
+							],
+							"query": [
+								{
+									"key": "animeId",
+									"value": "1"
+								}
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener capitulo por Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/chapters/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								"1"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar capitulo - ejemplo 1",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": \"1\",\r\n    \"titulo\":\"El secreto de la esfera del dragon\",\r\n    \"descripcion\":\"Goku conoce a Bulma, quien se encuentra en busqueda de las esferas del dragon\",\r\n    \"video\": \"https://www.dragonbolsuper.com.mx/2019/12/dragon-ball-1-espanol.html\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/chapters/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar capitulo - ejemplo 2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": \"1\",\r\n    \"titulo\":\"La busqueda del emperador\",\r\n    \"descripcion\":\"En este episodio conocemos a Pilaf, el primer enemigo de Goku\",\r\n    \"video\": \"https://www.dragonbolsuper.com.mx/2019/12/dragon-ball-2-espanol.html\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/chapters/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar capitulo - ejemplo 3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": \"2\",\r\n    \"titulo\":\"Las leyendas de una nueva era\",\r\n    \"descripcion\":\"La Fundación Graude ha organizado un torneo de artes marciales, que enfrenta a todos los Caballeros del mundo\",\r\n    \"video\": \"https://seriesyonkis.lat/episode/los-caballeros-del-zodiaco-1x1/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/chapters/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar capitulo - ejemplo 4",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": \"2\",\r\n    \"titulo\":\"Cuando Seiya viste la armadura de Pegaso\",\r\n    \"descripcion\":\"Seiya se presenta ante Saori, ofreciendo la armadura a cambio de ver a su hermana nuevamente.\",\r\n    \"video\": \"https://seriesyonkis.lat/episode/los-caballeros-del-zodiaco-1x2/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/chapters/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar capitulo - ejemplo 5",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": \"3\",\r\n    \"titulo\":\"Naruto Uzumaki ya esta aqui\",\r\n    \"descripcion\":\"Naruto es un joven aprendiz de ninja lleno de energía y bastante rebelde que no deja de hacer travesuras en su aldea, Konoha. No obstante, parece que guarda un gran secreto que ni él mismo conoce.\",\r\n    \"video\": \"https://www.crunchyroll.com/es/watch/GYK5PJV7R/enter-naruto-uzumaki\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/chapters/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar capitulo - ejemplo 6",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": \"3\",\r\n    \"titulo\":\"¡Soy Konohamaru!\",\r\n    \"descripcion\":\"Konohamaru es el nieto del Tercer Hokage y está dispuesto a derrotar a su propio abuelo para quedarse con el título de Hokage y que así lo reconozca la gente. Para ello, le pide a Naruto que sea su maestro.\",\r\n    \"video\": \"https://www.crunchyroll.com/es/watch/GYP8130KY/my-name-is-konohamaru\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/chapters/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar capitulo - ejemplo 7",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": \"4\",\r\n    \"titulo\":\"¿Ha nacido un genio del baloncesto?\",\r\n    \"descripcion\":\"Hanamichi Sakuragi recién llegado a la preparatoria Shohoku, abatido por su último rechazo de una muchacha llamada Yoko por un jugador de basquetbol llamado Oda, odia todo lo relacionado con el basquetbol, golpeando a cualquiera que lo mencionara, pero aparece Haruko Akagi, la cual le gusta y por el tamaño le pregunta que si le gusta el basquetbol, responde que si, al intentar un clavada que Haruko le enseña, ella ilusionada y entusiasmada en que será un gran jugador, y le pide que se inscriba en el equipo de basquetbol de la preparatoria.\",\r\n    \"video\": \"https://www1.animeonline.ninja/episodio/slam-dunk-cap-1/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/chapters/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresar capitulo - ejemplo 8",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": \"4\",\r\n    \"titulo\":\"¡Odio el baloncesto! Hanamichi contra Rukawa\",\r\n    \"descripcion\":\"Hanamichi se dirije a pelear con unos chicos de tercer año que lo molestaban, pero lo consigue golpeados y a Rukawa (amor no correspondido de Haruko), con sangre, Haruko cree que fue Hanamichi el que golpeo e intenta limpiar a Rukawa, pero este la trata mal, Hanamichi se enfada y lo golpea, luego de eso Haruko le dice a Hanamichi que lo odia y le dice que no quiere volver a verlo. Yohei le dice a Haruko que no fue Hanamichi quien lo golpeo, sino los otros estudiantes que estaban tirados en el suelo.\",\r\n    \"video\": \"https://www1.animeonline.ninja/episodio/slam-dunk-cap-2/\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/chapters/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								""
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Editar capitulo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"animeId\": \"1\",\r\n    \"titulo\":\"El secreto de la esfera del dragon ball\",\r\n    \"descripcion\":\"Goku conoce a Bulma, quien se encuentra en busqueda de las esferas del dragon y se hacen amigos\",\r\n    \"video\": \"https://www.dragonbolsuper.com.mx/2019/12/dragon-ball-1-espanol.html\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/chapters/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								"1"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar capitulo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXN1YXJpbzFAcHJ1ZWJhLmNvbSIsImlhdCI6MTY2ODg0ODkyMSwiZXhwIjoxNjY4ODUyNTIxfQ.h8Z_CPpB5PIKASAyw2-JKdFrnSSxKa6xKWL0OupNEtg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/chapters/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"chapters",
+								"4"
+							]
+						},
+						"description": "Devuelve los primeros 20 numeros de la serie fibonacci."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -47,7 +47,7 @@ const chaptersValidationRules = () => {
       .withMessage("Debe ingresar un titulo")
       .isLength({ min: 2 })
       .withMessage("El titulo es demasiado corto")
-      .isLength({ max: 20 })
+      .isLength({ max: 50 })
       .withMessage("El titulo es demasiado largo"),
     body("descripcion")
       .exists()
